@@ -1,7 +1,8 @@
 body{
+    background-image: url(./assets/images/Site-background-light.png);
     font-family: rubik, helvetica, arial, sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin: 0 ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
@@ -31,7 +32,7 @@ img{
 .main-article{
     min-width: 720px;
     max-width: none;
-    width: 45%;
+    width: 50%;
     padding: 30px;
     margin:auto;
  background-color: rgb(183, 167, 167);
@@ -86,7 +87,7 @@ background-color: rgb(38, 112, 215) ;
 text-align: center;
 font-size: 2.5em;
 font-family: serif;
-}
+} 
 .video{
     display: block;
     width:450px;
