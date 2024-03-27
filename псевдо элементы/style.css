@@ -1,0 +1,48 @@
+.title{
+    text-align: center;
+}
+.title::before{
+    content: '\26B9' ;
+    color: rgb(79, 131, 204);
+}
+.title::after{
+    content: '\272A' ;
+    color: rgb(16, 116, 116);
+}
+.link::before{
+    content: url(./assets/icons/arm-flex-outline.svg);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.paper{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: pink;
+    position: relative;
+    box-shadow: 3px 4px 5px 0px rgba(54,42,54,1);
+}
+.paper::before,
+.paper::after{
+  content: '';
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  box-shadow: 3px 4px 5px 0px rgba(54,42,54,1);
+}
+.paper::before{
+    background-color: gold;
+    z-index: -10;
+    transform: rotate(3deg) translateX(2px);
+}
+.link:hover::before{
+    content:url(./assets/icons/access-point-network-off.svg) ;
+}
+.paper::after{
+    background-color: tomato;
+    z-index: -2;
+    transform:  rotate(-2deg) translateY(2px);
+}
