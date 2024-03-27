@@ -1,10 +1,12 @@
 .main-header{
-background-color: rgb(73, 73, 192);
+/*background-color: rgb(73, 73, 192);*/
 height: 300px;
 padding-top: 100px;
-background-image: url(./../images/Light_background_grass.png), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 50%, rgba(129,199,255,1) 100%);;
-background-repeat: repeat-x, no-repeat;
-background-position: 0 120px, 0 0;
+background-color: rgb(104, 212, 255);
+background-image: url(./../images/Light_background_deepslate_transition.png) , url(./../images/Light_background_grass.png), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 50%, rgba(129,199,255,1) 100%),
+linear-gradient(0deg, rgba(51,2,31,1) 3%, rgba(2,0,36,1) 8%, rgba(129,199,255,1) 100%);
+background-repeat: repeat-x, repeat-x, no-repeat;
+background-position: bottom left ,0 120px, 0 0;
 }
 .main-menu{
 list-style: none;
@@ -25,6 +27,7 @@ text-decoration: underline;
 }
 .main-menu-item:hover>.submenu{
     display: block;
+    left: 0;
 }
 main{
     margin-top: -250px;
@@ -37,27 +40,48 @@ main{
 .submenu{
   display: none;
   position: absolute;
-  width: 210%;
+  width: 100%;
   left: -50%;
 list-style: none;
  padding: 7px; 
 background-color: white;
 min-width: 150px;
-max-width: 120px;
+max-width: 200px;
+}
+.left-80{
+    left: -80%;
+}
+.left-90{
+    left: -90%;
+}
+.left-100{
+    left: -100%;
+}
+.left0{
+    left: 0;
+}
+.left-10{
+    left: -5%;
 }
 .submenu-item{
-
+position: relative;
 }
+.submenu-item:hover>.submenu{
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
 .submenu-link{
     display: block;
     padding: 5px 9px;
     text-transform: capitalize;
     color: black;
-
 }
+.submenu-item:hover>.submenu-link,
 .submenu-link:hover{
 background-color: rgba(216, 112, 147, 0.489);
-color: blue;
+color: rgb(126, 126, 240);
 }
 
 

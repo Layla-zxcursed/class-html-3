@@ -3,7 +3,6 @@ body{
     font-family: rubik, helvetica, arial, sans-serif;
     font-size: 14px;
     margin: 0 ;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
     color: #0054a8;
@@ -34,7 +33,7 @@ img{
     max-width: none;
     width: 50%;
     padding: 30px;
-    margin:auto;
+    margin: auto;
  background-color: rgb(183, 167, 167);
 line-height: 1.75;
 }
