@@ -33,18 +33,36 @@
 .main-menu-item:hover > .submenu{
     display: block;
 }
-
+.main-menu-item:has(>.submenu)::after{
+    content: '\25BC';
+    color: #fff;
+    display: inline-block;
+    font-size: 60%;
+    padding-right: 30px;
+    transform: translateY(-2px);
+}
 .submenu{
     display: none;
     position: absolute;
     width: 100%;
-    top: 60px;
-    left: -19%;
+    top: 63px;
+    left: -15%;
     padding-right: 70%;
     list-style: none;               
     background-color: white;
 
+
 }
+.submenu:has(>.submenu-item)::before {
+content: '\23F5';
+display: inline-block;
+font-size: 70%;
+transform: translateY(100px);
+transform: translateX(240px);
+
+
+}
+    
 .submenu-item{
     position: relative;
 }
@@ -62,9 +80,7 @@ left: 100%;
 top: 0;
 }
 .submenu-item:has(>.submenu)::after {
-   
-    content: '\23F7';
+    content: '\1433';
 }
-
 
 
