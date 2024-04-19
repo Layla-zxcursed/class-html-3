@@ -1,21 +1,93 @@
-.flex-parent{
+ /* .flex-parent{
+    
     display: flex; 
-    /*напрямок головнои оси row colum-reverse*/
-    flex-direction: row-reverse;
+    напрямок головнои оси row colum-reverse
+    flex-direction: row;
     /*розтфшування вздовж додатковой оси */
   /*  justify-content: center;
-    align-items: stretch; */
-    justify-content: space-between;
-    align-content: center;
-    flex-direction: row;
-    min-height: 500px;
-    max-height: 600px;
-    background-color: rgb(213, 213, 249);
-    font-size: 24px;
-    flex-wrap: wrap;
-}
-.flex-child{
-    padding: 20px;
-    margin: 10px;
-    background-color: rgb(225, 200, 243);
-}
+    align-items: stretch; */ 
+ /*   align-content: center;*/
+ .product{
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  margin: auto;
+  background-color: #eee;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ .product a{
+  color: inherit;
+ }
+ .flex-parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+} 
+ /* padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+ */
+ .dorder-none{
+  border-bottom: none;
+ }
+ .flex-parent > span{
+  padding-right: 20px;
+  font-size: 1.5em;
+ }
+ .back{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+ .product-picture{
+  width: 40%;
+  border-right: 2px solid #ccc;
+ }
+ .product-info{
+  padding: 20px;
+  flex: 0 1 60%;
+ }
+ .product-info>h2,
+ .product-info>h3{
+  margin: 0;
+text-transform: uppercase;
+ }
+ .product-info>h3{
+font-weight: 100;
+font-size: 0.8em;
+ }
+ .product-price{
+font-weight: 100;
+font-size: 2.5em;
+margin: 0.5em 0;
+ }
+ p{
+  line-height: 1.8  ;
+ }
+ .group-btn>button{
+  width: 45%;
+  font-size: 1.2em;
+  padding: 0.6em;
+  text-transform: uppercase;
+ border:1px solid #666;
+ color:inherit;
+ margin-right: 10px;
+ }
+ .svg:hover{
+  color: tomato;
+  }
+  .c-honeydew:hover{
+    background-color: honeydew;
+  }
+   .c-hotpink:hover{
+   
+  background-color: rgba(255, 105, 180, 0.587);
+  }
+  
