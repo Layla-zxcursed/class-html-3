@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box ;  
+}
+.container-feedback{
+ display: flex;  
+ justify-content: center; 
+ background-color: rgba(250, 235, 215, 0.644);
+}
+.feedback{
+    flex-basis: 250px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 7px;
+    padding: 25px;
+    box-shadow: 0px -1px 3px 2px rgba(214,214,214,1);
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+}
+.feedback-author{
+   /* margin-top: auto;
+*/  
+}
+.feedback-author-prof,
+.feedback-author
+{
+ font-size: 0.85em; 
+ text-align: right;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.feedback-author-company{
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold ;
+}
+.feedback-author-prof{
+margin: 0;
+}
+.feedback-author{
+    margin-bottom: 0;
+}
+.quot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(./assets/icons/format-quote-open.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.quot.green{
+    background-color: green;
+}
+.feedback-author.green{
+    color: green;
+}
+.quot.pink{
+    background-color: pink;
+}
+.feedback-author.pink{
+    color: pink;
+}
+.feedback-text{
+    flex-grow: 1;
+}
