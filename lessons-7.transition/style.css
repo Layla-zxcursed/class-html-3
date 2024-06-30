@@ -1,0 +1,75 @@
+*{
+box-sizing: border-box;
+}
+.btn{
+    display: inline-block;
+width: 100px;
+height: 100px;
+margin: auto;
+border: none;
+border-radius: 50%;
+background-color: rgba(255, 0, 255, 0.1);
+transition: background-color 1s linear 0.2s, box-shadow 0.2s linear, color 0.8s ,top 0.8s ease-in-out;
+position: relative;
+top: 0px;
+}
+.btn:hover{
+    top: 20px;
+    background-color:rgb(128, 0, 0) ;
+    color: brown;
+}
+.btn:focus{
+    box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75); 
+}
+.parent{
+    padding: 5px;
+    background-color: darkcyan;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: yellowgreen;
+    transition:width 2s ;
+}
+.parent:hover>.child{
+width: 100%;
+}
+.ease{
+    transition-timing-function: ease;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.wrapper{
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+    position: relative;
+}
+.test{
+    position: relative;
+    left: -100%;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius:50%;
+    font-size: 70px;
+    transform-origin: center;
+    transition: transform 2s, margin-left 2s, left 2s;
+   
+}
+
+.wrapper:hover>.test{
+    transform: rotate(2turn);
+    margin-left: 50%;
+    left: 50%;
+}
