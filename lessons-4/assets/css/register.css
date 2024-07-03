@@ -11,8 +11,8 @@ h2{
     color: yellow;
 }
 .wrapper{
-    width: 50%;
-    min-width: 720px;
+    width: 55%;
+    min-width: 576px;
     margin: auto;
     background-color: white;
 } 
@@ -146,3 +146,47 @@ background-color: black;
 .apple>i{
     color: #000;
 }
+
+@media screen and (max-width: 1400px){
+    .wrapper{
+        width: 60%; 
+     }
+}
+@media screen and (max-width: 1200px){
+    .wrapper{
+        width: 70%;
+        background-color: purple;
+     }
+}
+@media screen and (max-width: 992px){
+ .wrapper{
+    width: 88%;
+    background-color: greenyellow;
+ }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+       width: 96%;
+       background-color: rgb(85, 47, 255);
+    }
+    .social,
+.register{
+    width: 90%;
+}
+   }
+  .flex-container{
+    flex-direction: column;
+    align-items: center;
+  } 
+
+
+
+
+/* 
+Extra extra large  ≥ 1400px
+Extra large  ≥ 1200px
+Large  ≥ 992px
+Medium  ≥ 768px
+Small  ≥ 576px
+X-Small  < 576px
+*/
