@@ -4,11 +4,14 @@ box-sizing: border-box;
 }
 .header{ 
 height: 120px;
-width: 1640px;
+width: 1920px;
+
+
 display: flex;
 align-items: center;
+justify-content: end;
 font-size: 20px;
-left: 240px;
+background-color: yellow;
 }
 .text-header{
     height: 24px;
@@ -18,7 +21,7 @@ left: 240px;
   align-items: center;
   flex-direction: row;
   position: relative;
- left: 500px;
+ padding-right: 56px;
  font-family: "montserratalternates";
   
 }
@@ -27,8 +30,7 @@ left: 240px;
     display: flex;
     position: absolute;
     height: 1019px;
-    width: 714px;
-  
+    width: 280px;
 }
 
 /*.contact{
@@ -40,13 +42,20 @@ left: 240px;
 
 }
 */
+.main{
+    width: 1920px;
+    height: 942px;
+   background-color: yellow;
 
+ 
+   
+}
 
 
 .wrapper{
-background-color: yellow;
 height: 1073px;
 width: 1920px;
+
 
 }
 
@@ -69,8 +78,8 @@ width: 1920px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 1808px;
+        position: relative;
+        left: 1920px;
     background-color: rgb(91, 0, 0);
     width: 120px;
     height: 120px;
@@ -79,6 +88,7 @@ width: 1920px;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+    
 
 }
 /*
@@ -96,30 +106,25 @@ width: 1920px;
     justify-content: center;
 }
 */
-   section{
-    width: 1640px;
-    height: 942px;
-  
-  
-   }
+ 
 .logo{
    display: inline-flex;
    align-items: center;
    justify-content: center;
   position: relative;
-  width: 714px;
+  width: 280px;
   height: 120px;
 background-repeat: no-repeat;
-
-
  
 }
+
 .article{
-    width: 1640px;
     height: 822px;
 }
+    
 .mare{
     transform: translateX(1000px);
     display: flex;
     align-items: center;
+  justify-content: end;
 }
