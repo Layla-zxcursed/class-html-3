@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    
+    }
+    body{
+        margin: 0;
+        font-family: Montserrat, sans-serif;
+    }
+
+
+/*.contact{
+    display: flex;
+    position: absolute;
+    right: 200px;
+    padding-top: 48px;
+    font-size: 20px;
+
+}
+*/
+
+ul{
+    list-style: none;
+    margin: 0;
+ }
+h1,h2{
+    font-family: Roboto, sans-serif;
+}
+
+.wrapper{
+    background-image:  linear-gradient(90deg, white 70px,yellow 70px);
+/* min-height: 1073px;
+min-width: 1920px; */
+
+}
+
+ /*   position: absolute;
+    display: inline;
+    right: 340px;
+    padding-top: 47px;
+    font-size: 20px;
+   */
+
+
+
+
+ /*
+ .mare{
+     display: flex;
+     align-items: center;
+   justify-content: end;
+ }
+*/
+a{                                                              
+    color: inherit;
+    text-decoration: none;
+ }
+
+
+ @media screen and (min-width: 1200px){
+   .wrapper{
+    background-image:  linear-gradient(90deg, white 245px,yellow 70px);
+   }
+   
+ }
+

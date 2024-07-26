@@ -1,18 +1,25 @@
+
 *{
 box-sizing: border-box;
 
 }
 .header{ 
-height: 120px;
-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+ padding-left: 15px;  
+/* height: 375px;
+height: 98px;
 
+min-width: 100%; 
 
-display: flex;
 align-items: center;
-justify-content: end;
+justify-content: space-between;
 font-size: 20px;
-background-color: yellow;
+background-color: yellow;*/
+/* transform: translateX(100%); */
 }
+/*
 .text-header{
     height: 24px;
     width: 513px;
@@ -25,79 +32,24 @@ background-color: yellow;
  font-family: "montserratalternates";
   
 }
-.aside{
-    background-color: white;
-    display: flex;
-    position: absolute;
-    height: 1019px;
-    width: 280px;
-}
-
-/*.contact{
-    display: flex;
-    position: absolute;
-    right: 200px;
-    padding-top: 48px;
-    font-size: 20px;
-
-}
 */
-.main{
-    width: 1920px;
-    height: 942px;
-   background-color: yellow;
-
- 
-   
-}
-
-
-.wrapper{
-height: 1073px;
-width: 1920px;
-
-
-}
-
- /*   position: absolute;
-    display: inline;
-    right: 340px;
-    padding-top: 47px;
-    font-size: 20px;
-   */
-}
-@font-face {
-        font-family: "montserratalternates";
-        src:
-          url('../css/fonts/montserratalternates-black-webfont.woff') format('woff'),
-          url('../css/fonts/montserratalternates-black-webfont.woff2') format('woff2');
-          
-          font-weight: bold;
-      }
 .lang{
     display: flex;
     align-items: center;
     justify-content: center;
-        position: relative;
-        left: 1920px;
+        /* position: relative;
+        left: 1920px; */
     background-color: rgb(91, 0, 0);
-    width: 120px;
-    height: 120px;
+    width: 98px;
+    height: 98px;
     color: aliceblue;
     font-family: "montserratalternates";
     font-size: 20px;
-    font-weight: bold;
     text-transform: uppercase;
-    
+    font-weight: bold;
+}
 
-}
 /*
-.burger{
-    width: 34px;
-    height: 29px;
-    background-image: url(./../icons/menu-open.1.png);
-   
-}
 .burger-center{
     width:97px ;
     height: 120px;
@@ -106,25 +58,102 @@ width: 1920px;
     justify-content: center;
 }
 */
- 
-.logo{
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-  position: relative;
-  width: 280px;
-  height: 120px;
-background-repeat: no-repeat;
- 
+.burger{
+    width: 34px;
+    height: 29px;
+    background-image: url(./../icons/menu-open.1.png);
+    background-repeat: no-repeat;
+    }
+   
+    .logo{
+       display: block;
+      width: 135px;
+      height: 75px;
+      background-repeat: no-repeat;
+      background-image: url(.././icons/logo.svg);
+    }
+ .menu{
+   display: none; 
+  /* display: flex; */
+   flex-direction: column;
+   list-style: none;
+    align-self: flex-start;
+    background-color: #ffffff99;
+ position: fixed;
+ width: 100%;
+ height: 100%; 
+ margin: 0;
+ left: 0px;
+ top: 0px;
+ padding-top: 125px;
+}
+.menu a{
+    display: inline-block;
+    padding: 30px;
+    text-transform: none;
+    font-weight: 900;
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+}
+.burger:hover~.menu{
+display: flex;
+}
+.burger,
+.logo,
+.lang{
+    position: relative;
+    z-index: 999;
 }
 
-.article{
-    height: 822px;
+.burger:hover{
+    background-image: url(./../images/x.svg);
 }
+
+ @media screen and (min-width:768px){
+    .logo{
+       margin-right: auto;
+       margin-left: 56px;
+    }
+   .logo{
+       margin-right: auto;
+   }
+ 
+}
+    @media screen and (min-width: 1200px){
+        .burger{
+            display: none;
+        }
+        .logo{
+            margin-right: auto;
+           
+        }
+        .burger{
+            display: none;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            color: black;;
+            margin-right: 60px;
+            position: static;
+            background-color: transparent;
+            height: auto;
+            width: auto;
+            padding-top: 0;
+         }
     
-.mare{
-    transform: translateX(1000px);
-    display: flex;
-    align-items: center;
-  justify-content: end;
+         
+         .menu a{
+           display: inline-block;
+           padding: 30px;
+           text-transform: none;
+           font-weight: 600;
+           font-size: 20px;
+           font-family: Montserrat, sans-serif;
+         }
+         .active{
+            color: red;
+         }
+    
 }

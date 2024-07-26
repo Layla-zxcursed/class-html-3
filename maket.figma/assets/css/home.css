@@ -1,0 +1,82 @@
+
+.title{
+    padding-bottom: 70px;
+font-size: 32px;
+text-transform: uppercase ;
+font-weight: 900;
+}
+.mobile-mare{
+display: block;
+margin: 70px auto;
+}
+.content{
+
+}
+.arrow{
+    position: relative;
+    top:13px;
+}
+.more{
+    font-weight: 600;
+font-size: 16px;
+font-family: Montserrat, sans-serif;
+background-color:#CE0002 ;
+color: #FFFFFF;
+display: flex;
+flex-direction: column;
+width: 120px;
+height: 120px;
+align-items: center;
+justify-content: center;
+}
+.text{
+font-size: 16px;
+font-family: Montserrat, sans-serif;
+font-weight: 600;
+position: relative;
+right: 15px;
+
+}
+.main-social{
+    display: none;
+}
+.big-mare{
+    display: none;
+}
+main{
+    padding-left: 15px;
+}
+@media screen and (min-width: 768px){
+.mobile-mare{
+display: none;
+}
+.flex{
+display: flex;
+margin-top: 50px;
+}
+.big-mare{
+    display: block;
+    left: 92px;
+    padding-bottom: 40px;
+    margin-left: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+font-size: 72px;
+}
+.text{
+    margin-left: 66px;
+}
+.main-social{
+    display: block;
+}
+}
+
+@media screen and (min-width: 1200px){
+    .big-mare{
+        display: block;
+    }
+}
