@@ -18,7 +18,7 @@ margin: 70px auto;
 }
 .more{
     font-weight: 600;
-font-size: 16px;
+font-size: 16px;  
 font-family: Montserrat, sans-serif;
 background-color:#CE0002 ;
 color: #FFFFFF;
@@ -38,7 +38,7 @@ right: 15px;
 
 }
 .main-social{
-    display: none;
+
 }
 .big-mare{
     display: none;
@@ -69,14 +69,49 @@ font-size: 72px;
 }
 .text{
     margin-left: 66px;
+    font-size: 20px;
+    bottom: 29px;
 }
 .main-social{
     display: block;
+    
 }
 }
 
 @media screen and (min-width: 1200px){
+    .mobile-mare{
+        display: none;
+        }
     .big-mare{
         display: block;
+        width: 80%;
+        position: relative;
+        left: 5%;
     }
+    .flex{
+        display: flex;
+        margin-top: 50px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row; 
+            position: relative;    
+            top: 550px;
+            left: 160px;
+        }
+        .title{
+        font-size: 72px;
+        position: relative;
+        left: 70px;
+        }       
+        .text{
+            margin-left: 66px;
+            font-size: 20px;
+            bottom: 29px;
+        }
+        .main-social{
+            display: block;
+            position: relative;
+            transform: translateY(350px);
+        }
 }
