@@ -1,0 +1,92 @@
+.main-contact {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 45px;
+  font-family: Montserrat;
+}
+.contact-social img{
+padding: 10px;
+}
+.contact-social{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 75px;
+    padding-top: 40px;
+    padding-bottom: 85px;
+    }
+ .title{
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    
+ }   
+.phone { 
+ font-family: Montserrat;
+ }
+ .flag{     
+    position: absolute;
+ top:37%;
+ right: 35%;
+ }
+ .out-map{
+position: relative;
+
+
+ }
+ .map{
+width: 100%;
+height: 410px;
+ }
+ h2{
+    margin-bottom: 5px;
+ }
+ .email {
+   font-weight: 500;
+ } 
+ .address{
+   padding-top: 22px;
+   font-weight: 500;
+ }
+ @media screen and (min-width: 768px) {
+    .map{
+      height: 545px;      
+     }
+     .out-map{
+        height: 545px;   
+        padding-bottom: 70px; 
+     }
+     .main-contact{
+        padding: 47px;
+      }
+ }
+ @media screen and (min-width: 1200px){
+    .contact-social{
+        flex-direction: column;
+        position: relative;
+        right: 15%;                                                     
+        bottom: 250px;
+    }
+    .out-map{
+        height: 757px;
+        left: 540px;
+        bottom: 750px;
+      }
+      .map{
+        height: 755px;
+      }
+    .main-contact{
+        padding-left: 185px;
+        padding-right: 0%;
+       
+       
+      }
+      .data{
+        position: relative;
+        top: 230px;
+        height: 320px;
+        width: 100% ;
+      }
+ }
+
+      
+  

@@ -10,7 +10,7 @@ display: block;
 margin: 70px auto;
 }
 .content{
-
+ 
 }
 .arrow{
     position: relative;
@@ -37,14 +37,15 @@ position: relative;
 right: 15px;
 
 }
-.main-social{
-
+.main-social img{
+    padding: 10px;
 }
 .big-mare{
     display: none;
 }
 main{
     padding-left: 15px;
+    position: relative;
 }
 @media screen and (min-width: 768px){
 .mobile-mare{
@@ -84,9 +85,10 @@ font-size: 72px;
         }
     .big-mare{
         display: block;
-        width: 80%;
+        width: 783px;
         position: relative;
-        left: 5%;
+        left: 43%;
+        
     }
     .flex{
         display: flex;
@@ -96,7 +98,7 @@ font-size: 72px;
             display: flex;
             flex-direction: row; 
             position: relative;    
-            top: 550px;
+            top: 620px;
             left: 160px;
         }
         .title{
