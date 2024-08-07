@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .main-contact {
   padding-left: 18px;
   padding-right: 18px;
@@ -25,13 +28,11 @@ padding: 10px;
  }
  .flag{     
     position: absolute;
- top:37%;
- right: 35%;
+ top:50%;
+ right: 40%;
  }
  .out-map{
 position: relative;
-
-
  }
  .map{
 width: 100%;
@@ -70,15 +71,15 @@ height: 410px;
         height: 757px;
         left: 540px;
         bottom: 750px;
+       
       }
       .map{
         height: 755px;
+       
       }
     .main-contact{
         padding-left: 185px;
         padding-right: 0%;
-       
-       
       }
       .data{
         position: relative;
@@ -86,6 +87,7 @@ height: 410px;
         height: 320px;
         width: 100% ;
       }
+
  }
 
       
